@@ -37,7 +37,7 @@ def map_time_to_words(hour, minute):
 
     hour_words = {
         1: "eis", 2: "zwöi", 3: "drü", 4: "vieri", 5: "füfi", 6: "sächsi",
-        7: "sibni", 8: "achti", 9: "nüni", 10: "zähni", 11: "eufi", 12: "zwölfi"
+        7: "sibni", 8: "achti", 9: "nüni", 10: "zähni", 11: "eufi", 12: "zwöufi"
     }
     words.append(hour_words[hour])
     return words
