@@ -100,3 +100,6 @@ def start_display():
             clock.tick(30)
 
         pygame.quit()
+
+if __name__ == "__main__":
+    start_display()
