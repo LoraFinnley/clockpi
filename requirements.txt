@@ -1,0 +1,4 @@
+pygame
+python-telegram-bot
+ntplib
+clock
