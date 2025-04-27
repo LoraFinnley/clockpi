@@ -1,13 +1,14 @@
 # __main__.py
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import threading
 import wifi_manager
 import setup_server
 from ui.display import start_display
 from telegram.bot import start_bot_in_thread
-import sys
-import os
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 def main():
     print("[MAIN] ClockPi startet...")
