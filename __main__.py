@@ -1,13 +1,10 @@
 import sys
 import os
 
-# ➔ Zwei Ebenen hochspringen!
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-
-import threading
-import wifi_manager
-import setup_server
+from utils import wifi_manager
+from utils import setup_server
 from ui.display import start_display
 from telegram.bot import start_bot_in_thread
 
