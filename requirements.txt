@@ -1,4 +1,6 @@
 pygame
 python-telegram-bot
+pyTelegramBotAPI
 ntplib
 clock
+python-dotenv

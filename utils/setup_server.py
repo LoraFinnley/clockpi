@@ -1,6 +1,6 @@
 from flask import Flask, request, redirect
 import threading
-import wifi_manager
+from clockpi.utils import wifi_manager
 
 app = Flask(__name__)
 
@@ -9,10 +9,10 @@ HTML_FORM = """
 <html lang='de'>
 <head>
     <meta charset='UTF-8'>
-    <title>ClockPi WLAN Setup</title>
+    <title>ClockPi WIFI Setup</title>
 </head>
 <body style='font-family:sans-serif; text-align:center; padding-top:50px;'>
-    <h1>ClockPi WLAN Setup</h1>
+    <h1>ClockPi WIFI Setup</h1>
     <form method='POST'>
         <input name='ssid' type='text' placeholder='WLAN Name (SSID)' required style='padding:10px; width:80%;'><br><br>
         <input name='password' type='password' placeholder='WLAN Passwort' required style='padding:10px; width:80%;'><br><br>

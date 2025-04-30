@@ -1,9 +1,14 @@
-# config.py
+import os
+from dotenv import load_dotenv
+
+# .env Datei laden
+load_dotenv()
+
+# Telegram Token
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 # Entwicklungsmodus aktivieren
-# True = Terminal ASCII Anzeige
-# False = Pygame Fenster Anzeige
-IS_DEV_MODE = True
+IS_DEV_MODE = False
 
 # Farben (nur relevant für pygame)
 COLOR_ACTIVE = (255, 255, 255)
